@@ -9,7 +9,7 @@ import toFinite from '../src/toFinite.js';
 import toInteger from '../src/toInteger.js';
 import toNumber from '../src/toNumber.js';
 import toString from '../src/toString.js';
-
+import divide from '../src/divide.js';
 
 describe('Add', () => {
   it('must return sum of two numbers', () => {
@@ -273,3 +273,17 @@ describe('eq', () => {
   });
 });
 
+describe('divide function', () => {
+  it('divides two numbers correctly', () => {
+    // Arrange
+    const dividend = 6;
+    const divisor = 4;
+
+    // Act
+    const result = divide(dividend, divisor);
+
+    // Assert
+    expect(result).to.be.deep.equal(1.5);
+  });
+
+});
