@@ -1,5 +1,14 @@
-install packages: npm install
+# Usage Instructions
+1. Install project dependencies
+```bash
+npm install
+```
+2. Run unit tests
+```bash
+npm test
+```
 
-run tests: npm test
-
-generate coverage (text and html): npm run coverage
+3. Generate coverage report
+```bash
+npm run coverage
+```
